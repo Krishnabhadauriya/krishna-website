@@ -1,11 +1,10 @@
-function showAlert() {
-    alert("Thanks for hiring! Contact me below 👇");
-}
+(function(){
+  emailjs.init({
+    publicKey: "YOUR_PUBLIC_KEY"
+  });
+})();
 
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    var name = document.getElementById("name").value;
-    document.getElementById("result").innerText =
-        "Thank you " + name + "! Message sent successfully.";
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Form submit detected ✅");
 });
