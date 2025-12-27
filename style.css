@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+header {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "⚡ ";
+    color: #ffcc00;
+}
+
+button {
+    padding: 14px 35px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+}
